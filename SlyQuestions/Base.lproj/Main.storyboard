@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Question-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Question" id="BYZ-38-t0r" customClass="ViewController" customModule="SlyQuestions" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="question_cloud_background.png" translatesAutoresizingMaskIntoConstraints="NO" id="jnQ-C7-z6g">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="center" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elG-l9-LWK">
+                                <rect key="frame" x="150" y="140" width="300" height="300"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" button="YES" image="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="BfS-TG-xOj"/>
+                                </constraints>
+                                <state key="normal" image="Sly_NewYears.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="slyButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mIC-pV-ILu"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Question of the Day" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Trs-Y2-4Qd">
+                                <rect key="frame" x="25" y="25" width="550" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="oDf-eW-yiG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fMM-gB-E4O">
+                                <rect key="frame" x="15" y="275" width="570" height="30"/>
+                                <state key="normal" title="Answer 1">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="answerTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KTL-3x-sq6"/>
+                                    <action selector="slyButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xmq-qR-2Jj"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbf-IK-59D">
+                                <rect key="frame" x="15" y="317" width="570" height="30"/>
+                                <state key="normal" title="Answer 2">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="answerTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zOW-VM-fRc"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WkS-N5-dDW">
+                                <rect key="frame" x="15" y="355" width="570" height="30"/>
+                                <state key="normal" title="Answer 3">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="answerTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nxO-5d-HCE"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S4f-wX-aGr">
+                                <rect key="frame" x="15" y="396" width="570" height="30"/>
+                                <state key="normal" title="Answer 4">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="answerTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a19-WT-don"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wxZ-MZ-NcF">
+                                <rect key="frame" x="15" y="435" width="570" height="30"/>
+                                <state key="normal" title="Answer 5">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="answerTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zlo-h3-eKd"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rainbows.png" translatesAutoresizingMaskIntoConstraints="NO" id="hcK-MK-Mtu">
+                                <rect key="frame" x="0.0" y="100" width="600" height="300"/>
+                            </imageView>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qTh-jO-pnh">
+                                <rect key="frame" x="175" y="4" width="240" height="55"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="elG-l9-LWK" firstAttribute="centerX" secondItem="fMM-gB-E4O" secondAttribute="centerX" id="2x4-8D-T9C"/>
+                            <constraint firstItem="jnQ-C7-z6g" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="4tG-Bl-2D9"/>
+                            <constraint firstItem="WkS-N5-dDW" firstAttribute="leading" secondItem="S4f-wX-aGr" secondAttribute="leading" id="6Hq-2Z-8O8"/>
+                            <constraint firstItem="wxZ-MZ-NcF" firstAttribute="top" secondItem="S4f-wX-aGr" secondAttribute="bottom" constant="10" id="6jN-Yd-Bmf"/>
+                            <constraint firstItem="Trs-Y2-4Qd" firstAttribute="centerX" secondItem="fMM-gB-E4O" secondAttribute="centerX" id="7bB-Su-uHO"/>
+                            <constraint firstItem="jnQ-C7-z6g" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8Tz-fM-E1G"/>
+                            <constraint firstItem="S4f-wX-aGr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-1" id="9Xj-bh-MOv"/>
+                            <constraint firstItem="hcK-MK-Mtu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="CrJ-u0-CYm"/>
+                            <constraint firstItem="elG-l9-LWK" firstAttribute="centerY" secondItem="hcK-MK-Mtu" secondAttribute="centerY" constant="50" id="FqZ-uY-JKX"/>
+                            <constraint firstItem="kbf-IK-59D" firstAttribute="trailing" secondItem="WkS-N5-dDW" secondAttribute="trailing" id="GxH-P9-ceN"/>
+                            <constraint firstItem="S4f-wX-aGr" firstAttribute="trailing" secondItem="wxZ-MZ-NcF" secondAttribute="trailing" id="Ic5-87-bYx"/>
+                            <constraint firstItem="kbf-IK-59D" firstAttribute="top" secondItem="fMM-gB-E4O" secondAttribute="bottom" constant="12" id="OxQ-yI-iwA"/>
+                            <constraint firstItem="hcK-MK-Mtu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="Pa4-CS-dxG"/>
+                            <constraint firstItem="Trs-Y2-4Qd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="9" id="QQr-ea-qKc"/>
+                            <constraint firstItem="S4f-wX-aGr" firstAttribute="leading" secondItem="wxZ-MZ-NcF" secondAttribute="leading" id="Tra-2l-iXd"/>
+                            <constraint firstItem="hcK-MK-Mtu" firstAttribute="centerX" secondItem="S4f-wX-aGr" secondAttribute="centerX" id="UTi-Vv-RAz"/>
+                            <constraint firstItem="kbf-IK-59D" firstAttribute="trailing" secondItem="fMM-gB-E4O" secondAttribute="trailing" id="Yx4-IN-6FA"/>
+                            <constraint firstItem="elG-l9-LWK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="130" id="aIN-3f-mpZ"/>
+                            <constraint firstItem="jnQ-C7-z6g" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="bF5-pa-6WZ"/>
+                            <constraint firstItem="Trs-Y2-4Qd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="5" id="eB0-mG-dMY"/>
+                            <constraint firstItem="WkS-N5-dDW" firstAttribute="top" secondItem="kbf-IK-59D" secondAttribute="bottom" constant="8" symbolic="YES" id="gZe-mj-067"/>
+                            <constraint firstAttribute="trailing" secondItem="jnQ-C7-z6g" secondAttribute="trailing" id="ha2-El-Ujj"/>
+                            <constraint firstItem="Trs-Y2-4Qd" firstAttribute="centerX" secondItem="jnQ-C7-z6g" secondAttribute="centerX" id="ky1-sB-u1m"/>
+                            <constraint firstItem="WkS-N5-dDW" firstAttribute="trailing" secondItem="S4f-wX-aGr" secondAttribute="trailing" id="lxs-hw-nFb"/>
+                            <constraint firstItem="kbf-IK-59D" firstAttribute="leading" secondItem="WkS-N5-dDW" secondAttribute="leading" id="nzq-yZ-83K"/>
+                            <constraint firstItem="fMM-gB-E4O" firstAttribute="top" secondItem="Trs-Y2-4Qd" secondAttribute="bottom" constant="50" id="vBo-n4-zj9"/>
+                            <constraint firstItem="elG-l9-LWK" firstAttribute="centerY" secondItem="jnQ-C7-z6g" secondAttribute="centerY" id="xe9-u2-WFa"/>
+                            <constraint firstItem="kbf-IK-59D" firstAttribute="leading" secondItem="fMM-gB-E4O" secondAttribute="leading" id="y5e-z2-V4s"/>
+                            <constraint firstItem="S4f-wX-aGr" firstAttribute="top" secondItem="WkS-N5-dDW" secondAttribute="bottom" constant="10" id="zmB-ar-nNo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="answerFive" destination="wxZ-MZ-NcF" id="KFE-eg-tVr"/>
+                        <outlet property="answerFour" destination="S4f-wX-aGr" id="mhb-wN-A3I"/>
+                        <outlet property="answerOne" destination="fMM-gB-E4O" id="Jet-gD-esC"/>
+                        <outlet property="answerThree" destination="WkS-N5-dDW" id="jtc-US-eze"/>
+                        <outlet property="answerTwo" destination="kbf-IK-59D" id="SNn-yC-Yrs"/>
+                        <outlet property="backgroundImage" destination="jnQ-C7-z6g" id="AKC-tD-RtK"/>
+                        <outlet property="questionLabel" destination="Trs-Y2-4Qd" id="AZ2-fn-EYk"/>
+                        <outlet property="questionView" destination="qTh-jO-pnh" id="foV-nO-99p"/>
+                        <outlet property="slyButton" destination="elG-l9-LWK" id="GKd-OD-8Lq"/>
+                        <outlet property="successImage" destination="hcK-MK-Mtu" id="8Ij-2K-95q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1073" y="-447"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Sly_NewYears.png" width="250" height="188"/>
+        <image name="question_cloud_background.png" width="1917" height="1941"/>
+        <image name="rainbows.png" width="1700" height="1500"/>
+    </resources>
+</document>
